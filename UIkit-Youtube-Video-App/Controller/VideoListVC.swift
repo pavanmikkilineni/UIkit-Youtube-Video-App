@@ -30,6 +30,15 @@ class VideoListVC: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard tableView.indexPathForSelectedRow != nil else{
+            return
+        }
+        let selectedVideo=videos[tableView.indexPathForSelectedRow!.row]
+        let destination=segue.destination as! VideoDetailVC
+        destination.video=selectedVideo
+    }
+    
     func updateUI(response:Response){
         DispatchQueue.main.async {
             self.videos=response.items!

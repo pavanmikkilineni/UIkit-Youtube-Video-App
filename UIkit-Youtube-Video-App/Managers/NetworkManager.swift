@@ -65,7 +65,7 @@ class NetWorkManager{
     func getThumbnail(thumbnailUrl:String,completionHandler: @escaping (Result<Data?,NetworkError>)->Void){
         
         if let thumbnailData = CacheManager.shared.getThumbnailCache(thumbnailUrl: thumbnailUrl){
-            print("Using Cahced Image")
+            print("Using Cahced Image.")
             completionHandler(.success(thumbnailData))
             return
         }
@@ -93,6 +93,7 @@ class NetWorkManager{
             }
             
             do{
+                print("Using Network Image.")
                 let data = try Data(contentsOf: localUrl)
                 CacheManager.shared.setThumbnailCache(thumbnailUrl: thumbnailUrl, data: data)
                 completionHandler(.success(data))
