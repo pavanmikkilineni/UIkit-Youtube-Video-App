@@ -17,7 +17,7 @@ class NetWorkManager{
         session=URLSession(configuration: config)
     }
     
-    func getVideos(completionHandler: @escaping (Result<Video,NetworkError>)->Void){
+    func getVideos(completionHandler: @escaping (Result<Response,NetworkError>)->Void){
         guard let url = URL(string:Constants.API_URL) else{
             completionHandler(.failure(.invalidURL))
             return
@@ -46,7 +46,10 @@ class NetWorkManager{
             }
             
             do{
-                
+                let decoder=JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                let response = try decoder.decode(Response.self, from: data)
+                completionHandler(.success(response))
                 
             }catch{
                 completionHandler(.failure(.unableToFetch))
