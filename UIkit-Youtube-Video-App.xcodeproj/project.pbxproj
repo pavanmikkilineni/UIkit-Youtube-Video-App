@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3923BB6027636FF600AE9FBC /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923BB5F27636FF500AE9FBC /* CacheManager.swift */; };
+		3923BB6327637BA800AE9FBC /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923BB6227637BA800AE9FBC /* VideoCell.swift */; };
 		392E72BD276316BA008EE669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72BC276316BA008EE669 /* AppDelegate.swift */; };
 		392E72BF276316BA008EE669 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72BE276316BA008EE669 /* SceneDelegate.swift */; };
 		392E72C1276316BA008EE669 /* VideoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72C0276316BA008EE669 /* VideoListVC.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3923BB5F27636FF500AE9FBC /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		3923BB6227637BA800AE9FBC /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		392E72B9276316BA008EE669 /* UIkit-Youtube-Video-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIkit-Youtube-Video-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		392E72BC276316BA008EE669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392E72BE276316BA008EE669 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3923BB6127637A4800AE9FBC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				392E72C2276316BA008EE669 /* Main.storyboard */,
+				392E72C7276316BF008EE669 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		392E72B0276316BA008EE669 = {
 			isa = PBXGroup;
 			children = (
@@ -68,16 +81,15 @@
 		392E72BB276316BA008EE669 /* UIkit-Youtube-Video-App */ = {
 			isa = PBXGroup;
 			children = (
-				392E72D4276317CD008EE669 /* Managers */,
-				392E72D327631764008EE669 /* Utilities */,
+				392E72BC276316BA008EE669 /* AppDelegate.swift */,
+				392E72BE276316BA008EE669 /* SceneDelegate.swift */,
+				3923BB6127637A4800AE9FBC /* Storyboards */,
 				392E72D22763175C008EE669 /* Model */,
 				392E72D127631752008EE669 /* View */,
 				392E72D027631747008EE669 /* Controller */,
-				392E72BC276316BA008EE669 /* AppDelegate.swift */,
-				392E72BE276316BA008EE669 /* SceneDelegate.swift */,
-				392E72C2276316BA008EE669 /* Main.storyboard */,
+				392E72D4276317CD008EE669 /* Managers */,
+				392E72D327631764008EE669 /* Utilities */,
 				392E72C5276316BF008EE669 /* Assets.xcassets */,
-				392E72C7276316BF008EE669 /* LaunchScreen.storyboard */,
 				392E72CA276316BF008EE669 /* Info.plist */,
 			);
 			path = "UIkit-Youtube-Video-App";
@@ -94,6 +106,7 @@
 		392E72D127631752008EE669 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3923BB6227637BA800AE9FBC /* VideoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				392E72D927631D81008EE669 /* NetworkManager.swift */,
+				3923BB5F27636FF500AE9FBC /* CacheManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -202,6 +216,8 @@
 				392E72DE27632311008EE669 /* ConstantsTemplate.swift in Sources */,
 				392E72EA27632EBC008EE669 /* Response.swift in Sources */,
 				392E72BD276316BA008EE669 /* AppDelegate.swift in Sources */,
+				3923BB6027636FF600AE9FBC /* CacheManager.swift in Sources */,
+				3923BB6327637BA800AE9FBC /* VideoCell.swift in Sources */,
 				392E72E827632843008EE669 /* Video.swift in Sources */,
 				392E72BF276316BA008EE669 /* SceneDelegate.swift in Sources */,
 				392E72E027632411008EE669 /* Constants.swift in Sources */,

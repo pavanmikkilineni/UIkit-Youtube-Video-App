@@ -56,9 +56,20 @@ extension VideoListVC:UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell",for: indexPath)
-        let title = self.videos[indexPath.row].title
-        cell.textLabel?.text=title
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID,for: indexPath) as! VideoCell
+        
+        let video=self.videos[indexPath.row]
+        
+        let cellId=video.videoId
+        cell.cellId=cellId
+        
+        cell.configureCell(video)
+        
+        if cell.cellId == cellId{
+            cell.setThumbnail(video: video)
+        }
+        
+        
         return cell
         
     }

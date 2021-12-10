@@ -25,7 +25,7 @@ class NetWorkManager{
         
         let task=session.dataTask(with: url){(data:Data?,response:URLResponse?,error:Error?) in
             
-            if let error=error{
+            if let _=error{
                 completionHandler(.failure(.unableToFetch))
                 return
             }
@@ -60,4 +60,54 @@ class NetWorkManager{
         }
         task.resume()
     }
+    
+    
+    func getThumbnail(thumbnailUrl:String,completionHandler: @escaping (Result<Data?,NetworkError>)->Void){
+        
+        if let thumbnailData = CacheManager.shared.getThumbnailCache(thumbnailUrl: thumbnailUrl){
+            print("Using Cahced Image")
+            completionHandler(.success(thumbnailData))
+            return
+        }
+        
+        guard let url = URL(string:thumbnailUrl) else{
+            completionHandler(.failure(.invalidURL))
+            return
+        }
+        
+        let task = session.downloadTask(with: url){ (localUrl:URL?,response:URLResponse?,error:Error?) in
+            
+            if let _=error{
+                completionHandler(.failure(.unableToFetch))
+                return
+            }
+            
+            guard let _=response as? HTTPURLResponse else{
+                completionHandler(.failure(.unableToFetch))
+                return
+            }
+            
+            guard let localUrl = localUrl else {
+                completionHandler(.failure(.badLocalUrl))
+                return
+            }
+            
+            do{
+                let data = try Data(contentsOf: localUrl)
+                CacheManager.shared.setThumbnailCache(thumbnailUrl: thumbnailUrl, data: data)
+                completionHandler(.success(data))
+                
+            }catch{
+                completionHandler(.failure(.unableToFetch))
+            }
+
+            
+            
+            
+            
+        }
+        task.resume()
+        
+    }
+    
 }
