@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		392E72BD276316BA008EE669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72BC276316BA008EE669 /* AppDelegate.swift */; };
 		392E72BF276316BA008EE669 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72BE276316BA008EE669 /* SceneDelegate.swift */; };
-		392E72C1276316BA008EE669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72C0276316BA008EE669 /* ViewController.swift */; };
+		392E72C1276316BA008EE669 /* VideoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72C0276316BA008EE669 /* VideoListVC.swift */; };
 		392E72C4276316BA008EE669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392E72C2276316BA008EE669 /* Main.storyboard */; };
 		392E72C6276316BF008EE669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392E72C5276316BF008EE669 /* Assets.xcassets */; };
 		392E72C9276316BF008EE669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392E72C7276316BF008EE669 /* LaunchScreen.storyboard */; };
@@ -25,7 +25,7 @@
 		392E72B9276316BA008EE669 /* UIkit-Youtube-Video-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIkit-Youtube-Video-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		392E72BC276316BA008EE669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392E72BE276316BA008EE669 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		392E72C0276316BA008EE669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		392E72C0276316BA008EE669 /* VideoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListVC.swift; sourceTree = "<group>"; };
 		392E72C3276316BA008EE669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		392E72C5276316BF008EE669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392E72C8276316BF008EE669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,7 +75,6 @@
 				392E72D027631747008EE669 /* Controller */,
 				392E72BC276316BA008EE669 /* AppDelegate.swift */,
 				392E72BE276316BA008EE669 /* SceneDelegate.swift */,
-				392E72C0276316BA008EE669 /* ViewController.swift */,
 				392E72C2276316BA008EE669 /* Main.storyboard */,
 				392E72C5276316BF008EE669 /* Assets.xcassets */,
 				392E72C7276316BF008EE669 /* LaunchScreen.storyboard */,
@@ -87,6 +86,7 @@
 		392E72D027631747008EE669 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				392E72C0276316BA008EE669 /* VideoListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			files = (
 				392E72DA27631D81008EE669 /* NetworkManager.swift in Sources */,
 				392E72DC27631DFB008EE669 /* NetworkError.swift in Sources */,
-				392E72C1276316BA008EE669 /* ViewController.swift in Sources */,
+				392E72C1276316BA008EE669 /* VideoListVC.swift in Sources */,
 				392E72DE27632311008EE669 /* ConstantsTemplate.swift in Sources */,
 				392E72EA27632EBC008EE669 /* Response.swift in Sources */,
 				392E72BD276316BA008EE669 /* AppDelegate.swift in Sources */,

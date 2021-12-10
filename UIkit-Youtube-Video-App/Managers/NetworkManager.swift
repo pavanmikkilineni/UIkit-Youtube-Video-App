@@ -49,6 +49,7 @@ class NetWorkManager{
                 let decoder=JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 let response = try decoder.decode(Response.self, from: data)
+                
                 completionHandler(.success(response))
                 
             }catch{
