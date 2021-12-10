@@ -17,6 +17,7 @@
 		392E72D827631CF3008EE669 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72D727631CF3008EE669 /* Video.swift */; };
 		392E72DA27631D81008EE669 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72D927631D81008EE669 /* NetworkManager.swift */; };
 		392E72DC27631DFB008EE669 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72DB27631DFB008EE669 /* NetworkError.swift */; };
+		392E72DE27632311008EE669 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E72DD27632311008EE669 /* ConstantsTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		392E72D727631CF3008EE669 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		392E72D927631D81008EE669 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		392E72DB27631DFB008EE669 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		392E72DD27632311008EE669 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				392E72D5276317E9008EE669 /* Constants.swift */,
 				392E72DB27631DFB008EE669 /* NetworkError.swift */,
+				392E72DD27632311008EE669 /* ConstantsTemplate.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				392E72DA27631D81008EE669 /* NetworkManager.swift in Sources */,
 				392E72DC27631DFB008EE669 /* NetworkError.swift in Sources */,
 				392E72C1276316BA008EE669 /* ViewController.swift in Sources */,
+				392E72DE27632311008EE669 /* ConstantsTemplate.swift in Sources */,
 				392E72BD276316BA008EE669 /* AppDelegate.swift in Sources */,
 				392E72BF276316BA008EE669 /* SceneDelegate.swift in Sources */,
 				392E72D6276317E9008EE669 /* Constants.swift in Sources */,
